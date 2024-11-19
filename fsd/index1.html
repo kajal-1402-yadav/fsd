@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Document</title>
+
+    <style>
+        /*priority*/
+        /*inline>!important>id>class>element*/
+
+        /*id selector*/
+
+        /*#p1{
+            text-align: center;
+            color: red;
+        }
+        #test{
+            background-color: yellow;
+        }*/
+
+         /*class selector*/
+
+        /*.para1{
+            color: rgb(231, 117, 11) !important;
+            background-color: rgb(28, 228, 151);
+            text-align: center;
+        }
+        .h2{
+            font-size: 35px;
+            color: rgb(245, 231, 231);
+            /*background-color: blue;*/
+        /*}
+        .bg-pink{
+            background-color: rgb(238, 102, 102);
+        }
+        #p1{
+            color: aliceblue;
+        }
+        h2.bg-pink{
+            font-size: 35px;
+            background-color: rgb(165, 42, 155);
+        }*/
+
+        /*universal selector*/
+
+        /* *{
+            text-align: center;
+            font-size: 25px; 
+            color:rgb(228, 4, 71);
+        }
+        h2{
+            color: red;
+        }*/
+
+        /*attribute selector*/
+        /*input[type=text]{
+           width: 500px;
+           background-color: pink;
+           color:red;
+           padding:60px;
+        }
+        input[type=submit]{
+            width: 100px;
+            height:50px;
+            color: #fff;
+            background-color: #000;
+        }
+        a[target=_blank]{
+            color: red;
+            text-decoration: none;
+        }*/
+
+
+        /*Combinators*/
+        /*descendant child*/
+        div.c1 p span{
+            font-size: 25px;
+            color:blue;
+            background-color: pink;
+        }
+         /*direct child*/
+        div.c1 > p{
+            font-size: 35px;
+            color:rgb(10, 216, 61);
+            background-color: rgb(231, 8, 45);
+        }
+        /*adjacent child*/
+        div.c1 + p{
+            font-size: 35px;
+            color:rgb(67, 192, 250);
+            background-color: rgb(221, 231, 233);
+        }
+
+
+        
+
+    </style>
+</head>
+<body id="test">
+    <!-- <p id="p1" class="para1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum saepe exercitationem quod asperiores quia animi modi doloribus quaerat! Ipsa magnam necessitatibus saepe quis.</p>
+    <h2 class="h2 bg-pink">hello</h2>
+    <h3 class="bg-pink">hi</h3> -->
+
+    <!-- <h2>Universal selector</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam libero velit quisquam praesentium soluta illo porro ab dolore. A dolores placeat iste itaque numquam in pariatur quae nisi asperiores cupiditate?</p> -->
+
+    <!-- <input type="text"/>
+    <input type="text"/>
+    <input type="submit"/>
+    <a href="#" target="_blank">link1</a>
+    <a href="#">link2</a> -->
+
+    <div class="c1">
+        <p>Hi</p>
+        <div>
+            <p>Hello
+                <span>Kajal</span>
+            </p>
+        </div>
+        <p>Good morning</p>
+    </div>
+    <!-- <h1>heading</h1> -->
+    <p>outside</p>
+    <p>outside</p>
+    
+
+</body>
+</html>
