@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 50px;
+        }
+
+        .div1{
+            background-color: red;
+            width: 100px;
+            height: 100px;
+            border: 2px solid black;
+        }
+        
+        /*.div1:hover{
+            /*transform: rotate(-20deg);
+            transform:translate(200px,100px);   
+            transform: skew(20deg,10deg);
+            transform: scale(3);
+            border: 5px  solid gold;
+            background-color: pink;
+        }*/
+           
+        .div1:hover + .img1{
+            transform: translateX(100px);
+        }
+
+        .img1{
+            border-radius: 12px;
+            /*transform: rotate(45deg);*/
+            transform: skewX(-20deg);
+        }
+
+        .img1:hover{
+            /*transform: rotate(3000deg);*/
+            /*transform: scale(-1,-2);*/
+            /*transform: scale(-1);*/
+            transform: skewY(20deg);
+        }
+
+
+    </style>
+</head>
+<body>
+    <!-- <div class="div1">
+    </div> -->
+
+    <div class="div1">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque consec
+    </div>
+    <img src="a.png" alt="" class="img1">
+</body>
+</html>
