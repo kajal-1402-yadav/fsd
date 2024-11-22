@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            height: 200px;
+            width: 300px;
+            float: left;
+            border: 1px solid blue;
+            margin: 10px;
+            padding: 10px;
+            position: relative;
+            border-radius: 20px;
+        }
+
+        .p1{
+            /*background-image: linear-gradient(to left ,red,blue,tomato);*/
+            background-image: linear-gradient(to top right ,red,blue,tomato,gold,pink,green,purple);
+        }
+        .p2{
+            background-image: linear-gradient(to right bottom,red 50%, blue 20%,tomato);
+        }
+        .p3{
+            background-image: linear-gradient(to bottom right,red, blue,tomato);
+        }
+        .p4{
+            background-image: conic-gradient(from 120deg,red, rgb(231, 63, 186),tomato);
+        }
+        .p5{
+            background-image: linear-gradient(red 10%, blue 20%,tomato);
+        }
+        .p6{
+            background-color: aqua;
+            background-image:repeating-linear-gradient(-30deg,red 10%,pink,gold, blue 20%,tomato 20%);
+        }
+        .p7{
+            background-image: conic-gradient(from 90deg,blue 0deg,pink 90deg,green 90deg ,rgb(237, 123, 123) 180deg ,rgb(231, 189, 4) 180deg,rgb(42, 128, 165) 270deg,yellow 27deg);
+        }
+        .p8{
+            background-image: repeating-radial-gradient(yellow 50%,rgb(247, 77, 77),rgb(36, 227, 84),rgb(40, 172, 225),gold);
+        }
+        .p9{
+            background-image: radial-gradient(red,blue,tomato);
+        }
+        .p10{
+            background-image: radial-gradient(circle,red,blue,tomato);
+        }
+        .p11{
+            border:2px solid black;
+            width: 300px;
+            height: 300px;
+            border-radius:300px ;
+            background-image: conic-gradient(purple 0deg 45deg,red 45deg 180deg,gold 180deg 225deg ,green 225deg 270deg,blue 270deg);
+            transition: all 10s 2s;
+        }
+        .p11:hover{
+            transform: rotate(1000deg);
+        }
+
+    </style>
+</head>
+<body>
+    <div class="p1">Linear gradient 1</div>
+    <div class="p2">Linear gradient 2</div>
+    <div class="p3">Linear gradient 3</div>
+    <div class="p4">conic gradient 4</div>
+    <div class="p5">Linear gradient 5</div>
+    <div class="p6">repeating linear gradient 6</div>
+    <div class="p7">conic gradient 7</div>
+    <div class="p8">repeating radial gradient 8</div>
+    <div class="p9">radial-gradient 9</div>
+    <div class="p10">Radial gradient 10</div>
+    <div class="p11"></div>
+</body>
+</html>
