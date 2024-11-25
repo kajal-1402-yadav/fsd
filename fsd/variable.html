@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root{
+            --b:rgb(240, 21, 156);
+            --all:solid dashed double dotted;
+            --b1:3px dashed rgb(140, 20, 238);
+        }
+        p{
+            --b:brown;
+            --c:center;
+            border-style: var(--all);
+            border-color: var(--b);
+        }
+        h1{
+            color:var(--b);
+            text-align: var(--c);
+        }
+
+    </style>
+</head>
+<body>
+    <h1>This is heading</h1>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est velit animi officiis, eveniet nam quod molestias aut fugit quia tempora temporibus neque incidunt!</p>
+</body>
+</html>

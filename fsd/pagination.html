@@ -1,0 +1,55 @@
+<html>
+  <head>
+    <style>
+      .pagination {
+        display: inline-block;
+      }
+      .pagination .active {
+        background-color: rgb(41, 248, 4);
+      }
+      .pagination a {
+        color: black;
+        float: left;
+        padding: 8px 16px;
+        text-decoration: none;
+        border-radius: 12px;
+        border: 2px dashed rgb(232, 7, 202);
+      }
+      .pagination a.active {
+        background-color: cadetblue;
+        border-radius: 0px;
+        border: 2px dashed rgb(7, 59, 247);
+      }
+      .pagination a:hover {
+        background-color: #f50404;
+        border-radius: 12px;
+        transform: rotate(360deg);
+        transition: all 20s;
+        background-color: aqua;
+      }
+      p:hover {
+        background-color: pink;
+        transform: rotate(360deg);
+        transition: all 20s;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Simple Pagination</h2>
+    <div class="pagination">
+      <a href="#">&laquo;</a>
+      <a href="https://www.google.com" class="active">1</a>
+      <a href="#">2</a>
+      <a href="#">3</a>
+      <a href="#">4</a>
+      <a href="#">5</a>
+      <a href="#">6</a>
+      <a href="#">&raquo;</a>
+    </div>
+    <p>
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem
+      deserunt harum soluta cum molestiae ipsa debitis iure blanditiis accusamus
+      ex. Magnam, esse itaque?
+    </p>
+  </body>
+</html>
