@@ -1,0 +1,72 @@
+<!-- Write an HTML & CSS script to design two tables having 3 rows & 3
+columns of 50% width each horizontally adjacent to each other. They have
+blue and green background colors respectively. If page turns to portrait
+mode, then background colors of tables should be swapped. Responsive
+concept must be observed while shrinking width of page. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: flex;
+            gap:20px;
+        }
+        .t1{
+            background-color: blue;
+        }
+        .t2{
+            background-color: green;
+        }
+        @media screen and (orientation:portrait) {
+            .t2{
+                background-color: blue;
+                max-width: auto;
+            }
+            .t1{
+                background-color: green;
+                max-width: auto;
+            } 
+        }
+
+    </style>
+</head>
+<body>
+    <table class="t1" width="500px" height="500px" border="2px">
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+    <table class="t2"  width="500px" height="500px" border="2px">
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+</body>
+</html>
