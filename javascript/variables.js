@@ -119,4 +119,13 @@
 // console.log(z1);
 
 
+var x=16+4+'xyz'//20xyz
+var y='xyz'+16+4//xyz164
+var z=3+4+'pq'+7+8//7pq78
+console.log(x,y,z)
+
+
+
+
+
 
