@@ -1,0 +1,27 @@
+<!-- js for following:
+    give keycode for keypress
+    msg vowel is pressed on pressing vowel key
+    bg color should change red after release  key -->
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+            function keyp(e){
+                c=e.key
+                document.write=e.keycode
+                if(c=="a"||c=="A"||c=="e"||c=="o"||c=="i"||c=="u"||c=="E"||c=="I"||c=="O"||c=="U"){
+                    alert("vowel pressed")
+                }
+                
+            }
+            function keyu(){
+                document.body.style.backgroundColor="red"
+            }
+        </script>
+    </body>
+    </html>
