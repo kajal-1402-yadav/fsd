@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        arr1=[1,2,3,4]
+        arr2=[11,2,33]
+        arr=[arr1,arr2]
+        console.log(arr)
+        a=[...arr1,...arr2]
+        console.log(a)
+        console.log(Math.min(a))
+        console.log(Math.min(...a))
+        console.log(Math.max(...a))
+        console.log(...a.sort())
+        console.log(a.sort((a,b)=>(b-a)))//desc
+        console.log(a.sort((a,b)=>(a-b)))//asc
+
+
+    </script>
+</body>
+</html>
