@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+
+    <script>
+      /*
+        function f1(a,b){
+            return a*b
+        }
+        console.log(f1(5))
+        console.log(f1(2,3))
+
+        function f2(a,b=5){
+            return a*b
+        }
+        console.log(f2(5))
+        console.log(f2(2,3))
+
+        function f3(a=2,b){
+            return a*b
+        }
+        console.log(f3(5))
+        console.log(f3(2,3))   */
+
+      /*write es6 function to be called on button click
+        take one div with some text and no decor initially
+        take font size 50px and italic style as default arguments and pass bg color and text color to function
+        onbuttonclick set all new properties */
+      st = (bg, fc, fs = "50px", s = "italic") => {
+        d = document.getElementById("div1");
+        d.style.background = bg;
+        d.style.color = fc;
+        d.style.fontSize = fs;
+        d.style.fontStyle = s;
+      };
+    </script>
+    <div id="div1" >Hello world</div>
+    <input type="button" value="click" onclick="st('black','white')">
+  </body>
+</html>
